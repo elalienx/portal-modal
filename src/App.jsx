@@ -1,6 +1,7 @@
 // Project files
-import candidates from "./candidates.json";
 import CandidateRow from "./components/CandidateRow";
+import candidates from "./data/candidates.json";
+import "./style/style.sass";
 
 export default function App() {
   // Properties
@@ -13,12 +14,15 @@ export default function App() {
 
   return (
     <div className="App">
+      {/* Header */}
       <header className="hero">
         <h1>Novare Frontend course</h1>
         <a href={PRESENTATION_URL} target="_blank" className="button">
           Learn more
         </a>
       </header>
+
+      {/* Candidates */}
       <section className="candidates">
         <h2>Meet the 2021 candidates</h2>
         <p>
@@ -35,6 +39,8 @@ export default function App() {
         </table>
         <tbody>{CandidateRows}</tbody>
       </section>
+
+      {/* Footer */}
       <footer className="footer">© 2021 Novare Human Capital</footer>
     </div>
   );
