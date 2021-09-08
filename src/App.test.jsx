@@ -1,8 +1,11 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+// NPM Packages
+import { render, screen } from "@testing-library/react";
 
-test('renders learn react link', () => {
+// Project files
+import App from "./App";
+
+test("should render the download info link", () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
+  const linkElement = screen.getByText(/learn more/i);
   expect(linkElement).toBeInTheDocument();
 });

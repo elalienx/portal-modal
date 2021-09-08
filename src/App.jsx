@@ -5,7 +5,8 @@ import "./style/style.sass";
 
 export default function App() {
   // Properties
-  const PRESENTATION_URL = "foobar.com";
+  const PRESENTATION_URL =
+    "https://www.icloud.com/keynote/07XPMwrxQFSTK9hIaJWrwB2Iw";
 
   // Component
   const CandidateRows = candidates.map((item, index) => (
