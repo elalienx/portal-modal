@@ -23,7 +23,7 @@ export default function App() {
       </header>
 
       {/* Candidates */}
-      <section className="candidates">
+      <section className="candidates section">
         <h2>Meet the 2021 candidates</h2>
         <p>
           This is our list of candidates for this iteration. Each week the
@@ -41,7 +41,9 @@ export default function App() {
       </section>
 
       {/* Footer */}
-      <footer className="footer">© 2021 Novare Human Capital</footer>
+      <footer className="footer">
+        <div className="section">© 2021 Novare Human Capital</div>
+      </footer>
     </div>
   );
 }
