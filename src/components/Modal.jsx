@@ -3,12 +3,7 @@ import ReactDom from "react-dom";
 
 export default function Modal({ isOpen, children, onClose }) {
   // safeguard
-  if (!isOpen) {
-    return ReactDom.createPortal(
-      <p>is closed? {isOpen}</p>,
-      document.getElementById("portal")
-    );
-  }
+  if (!isOpen) return null;
 
   return ReactDom.createPortal(
     <>

@@ -12,15 +12,7 @@ export default function Candidates() {
 
   // Component
   const CandidateRows = candidates.map((item, index) => (
-    <CandidateRow
-      key={index}
-      item={item}
-      onClick={() => {
-        console.log("Candidates.jsx <CandidateRow> onClick() name", item.name);
-        console.log("Candidates.jsx <CandidateRow> onClick() isOpen", !isOpen);
-        setIsOpen(!isOpen);
-      }}
-    />
+    <CandidateRow key={index} item={item} onClick={() => setIsOpen(!isOpen)} />
   ));
 
   return (
@@ -45,13 +37,7 @@ export default function Candidates() {
       </table>
 
       {/* Modal */}
-      <Modal
-        isOpen={isOpen}
-        onClose={() => {
-          console.log("Candidates.jsx <Modal> onClose() clossing modal");
-          setIsOpen(false);
-        }}
-      >
+      <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
         <CandidateModal />
       </Modal>
     </section>
