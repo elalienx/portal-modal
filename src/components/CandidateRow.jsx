@@ -3,7 +3,9 @@ export default function CandidateRow({ item }) {
 
   return (
     <tr>
-      <td>{thumbnailURL}</td>
+      <td>
+        <img src={thumbnailURL} alt="Thumbnail" />
+      </td>
       <td>{name}</td>
       <td>
         <a href={curriculumURL}>Curriculumn</a>
