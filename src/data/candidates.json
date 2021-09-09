@@ -1,26 +1,26 @@
 [
   {
-    "thumbnailURL": "foo.com",
+    "thumbnailURL": "https://picsum.photos/id/100/50",
     "name": "Armin",
     "curriculumURL": "https://github.com/DizdarArmin/portofolio",
     "portoflioURL": "https://armin-dizdar-portofolio.web.app/"
   },
   {
-    "thumbnailURL": "foo.com",
+    "thumbnailURL": "https://picsum.photos/id/200/50",
     "name": "Clement",
-    "curriculumURL": "google.com",
-    "portoflioURL": "google.com"
+    "curriculumURL": "https://github.com/clecardona/npa_portfolio",
+    "portoflioURL": "https://npa-portfolio.web.app/"
   },
   {
-    "thumbnailURL": "foo.com",
+    "thumbnailURL": "https://picsum.photos/id/300/50",
     "name": "Dakouri",
-    "curriculumURL": "google.com",
-    "portoflioURL": "google.com"
+    "curriculumURL": "https://github.com/DakouriKobri/portfolio-web-dk",
+    "portoflioURL": "http://www.bing.com"
   },
   {
-    "thumbnailURL": "foo.com",
+    "thumbnailURL": "https://picsum.photos/id/400/50",
     "name": "Emmanuel",
-    "curriculumURL": "google.com",
-    "portoflioURL": "google.com"
+    "curriculumURL": "https://github.com/emmaero/PortfolioWebsite.git",
+    "portoflioURL": "https://emmanuel-1eea2.web.app/"
   }
 ]

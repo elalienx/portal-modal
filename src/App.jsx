@@ -10,17 +10,17 @@ import "./style/style.sass";
 
 export default function App() {
   // Local state
-  const [modalChild, setModalChild] = useState(null);
+  const [modal, setModal] = useState(null);
 
   return (
     <div className="App">
       {/* Landing page */}
       <Hero />
-      <Candidates setModalChild={setModalChild} />
+      <Candidates setModal={setModal} />
       <Footer />
 
       {/* Modal */}
-      <Modal state={[modalChild, setModalChild]} />
+      <Modal state={[modal, setModal]} />
     </div>
   );
 }

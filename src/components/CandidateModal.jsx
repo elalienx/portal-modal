@@ -1,9 +1,18 @@
-export default function CandidateModal() {
+export default function CandidateModal({ item }) {
+  const { name, portoflioURL } = item;
+
   return (
     <div className="candidate-modal">
-      <h2>Candidate name</h2>
+      <h2>Candidate: {name}</h2>
       <p>Candidate description</p>
-      <button className="button">Click me</button>
+      <a
+        className="button"
+        href={portoflioURL}
+        target="_blank"
+        rel="noreferrer"
+      >
+        View portoflio
+      </a>
     </div>
   );
 }

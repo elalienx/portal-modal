@@ -3,7 +3,7 @@ import CandidateModal from "../components/CandidateModal";
 import CandidateRow from "../components/CandidateRow";
 import candidates from "../data/candidates.json";
 
-export default function Candidates({ setModalChild, modalState }) {
+export default function Candidates({ setModal }) {
   // Component
   const CandidateRows = candidates.map((item, index) => (
     <CandidateRow key={index} item={item} onClick={() => onCandidate(item)} />
@@ -11,7 +11,7 @@ export default function Candidates({ setModalChild, modalState }) {
 
   // Methods
   function onCandidate(item) {
-    setModalChild(<CandidateModal item={item} />);
+    setModal(<CandidateModal item={item} />);
   }
 
   return (
@@ -22,7 +22,6 @@ export default function Candidates({ setModalChild, modalState }) {
         more proficient as they develop more and more projects.
       </p>
 
-      {/* Make a component? */}
       <table>
         <thead>
           <tr>
