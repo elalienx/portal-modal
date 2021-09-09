@@ -15,7 +15,7 @@ export default function App() {
   return (
     <div className="App">
       {/* Landing page */}
-      <Hero />
+      <Hero setModal={setModal} />
       <Candidates setModal={setModal} />
       <Footer />
 
