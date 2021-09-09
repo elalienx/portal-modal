@@ -1,11 +1,18 @@
+// NPM Packages
+import { useState } from "react";
 // Project files
+import CandidateModal from "../components/CandidateModal";
 import CandidateRow from "../components/CandidateRow";
+import Modal from "../components/Modal";
 import candidates from "../data/candidates.json";
 
 export default function Candidates() {
+  // Local state
+  const [isOpen, setIsOpen] = useState(false);
+
   // Component
   const CandidateRows = candidates.map((item, index) => (
-    <CandidateRow key={index} item={item} />
+    <CandidateRow key={index} item={item} toggleState={[isOpen, setIsOpen]} />
   ));
 
   return (
@@ -15,6 +22,8 @@ export default function Candidates() {
         This is our list of candidates for this iteration. Each week the become
         more proficient as they develop more and more projects.
       </p>
+
+      {/* Make a component? */}
       <table>
         <thead>
           <tr>
@@ -26,6 +35,11 @@ export default function Candidates() {
         </thead>
         <tbody>{CandidateRows}</tbody>
       </table>
+
+      {/* Modal */}
+      <Modal>
+        <CandidateModal />
+      </Modal>
     </section>
   );
 }
