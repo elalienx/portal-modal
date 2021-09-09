@@ -1,9 +1,14 @@
 // NPM Packages
 import ReactDom from "react-dom";
 
-export default function Modal({ open, children, onClose }) {
+export default function Modal({ isOpen, children, onClose }) {
   // safeguard
-  if (!open) return null;
+  if (!isOpen) {
+    return ReactDom.createPortal(
+      <p>is closed? {isOpen}</p>,
+      document.getElementById("portal")
+    );
+  }
 
   return ReactDom.createPortal(
     <>

@@ -1,4 +1,4 @@
-export default function CandidateModal({ item }) {
+export default function CandidateModal() {
   return (
     <div className="candidate-modal">
       <h2>Candidate name</h2>
