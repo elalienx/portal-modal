@@ -2,24 +2,24 @@
   {
     "thumbnailURL": "foo.com",
     "name": "Armin",
+    "curriculumURL": "https://github.com/DizdarArmin/portofolio",
+    "portoflioURL": "https://armin-dizdar-portofolio.web.app/"
+  },
+  {
+    "thumbnailURL": "foo.com",
+    "name": "Clement",
     "curriculumURL": "google.com",
     "portoflioURL": "google.com"
   },
   {
     "thumbnailURL": "foo.com",
-    "name": "Armin",
+    "name": "Dakouri",
     "curriculumURL": "google.com",
     "portoflioURL": "google.com"
   },
   {
     "thumbnailURL": "foo.com",
-    "name": "Armin",
-    "curriculumURL": "google.com",
-    "portoflioURL": "google.com"
-  },
-  {
-    "thumbnailURL": "foo.com",
-    "name": "Armin",
+    "name": "Emmanuel",
     "curriculumURL": "google.com",
     "portoflioURL": "google.com"
   },
