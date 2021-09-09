@@ -7,8 +7,8 @@ export default function Modal({ open, children, onClose }) {
 
   return ReactDom.createPortal(
     <>
-      <div style="modal-background" />
-      <div style="modal-window">
+      <div className="modal-background" />
+      <div className="modal-window">
         <button onClick={onClose}>Close Modal</button>
         {children}
       </div>

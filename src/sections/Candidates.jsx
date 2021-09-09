@@ -12,7 +12,7 @@ export default function Candidates() {
 
   // Component
   const CandidateRows = candidates.map((item, index) => (
-    <CandidateRow key={index} item={item} toggleState={[isOpen, setIsOpen]} />
+    <CandidateRow key={index} item={item} onClick={() => setIsOpen(!isOpen)} />
   ));
 
   return (
