@@ -1,19 +1,18 @@
-// NPM Packages
-import { useState } from "react";
 // Project files
 import CandidateModal from "../components/CandidateModal";
 import CandidateRow from "../components/CandidateRow";
-import Modal from "../components/Modal";
 import candidates from "../data/candidates.json";
 
-export default function Candidates() {
-  // Local state
-  const [isOpen, setIsOpen] = useState(false);
-
+export default function Candidates({ setModalChild, modalState }) {
   // Component
   const CandidateRows = candidates.map((item, index) => (
-    <CandidateRow key={index} item={item} onClick={() => setIsOpen(!isOpen)} />
+    <CandidateRow key={index} item={item} onClick={() => onCandidate(item)} />
   ));
+
+  // Methods
+  function onCandidate(item) {
+    setModalChild(<CandidateModal item={item} />);
+  }
 
   return (
     <section className="candidates section">
@@ -35,11 +34,6 @@ export default function Candidates() {
         </thead>
         <tbody>{CandidateRows}</tbody>
       </table>
-
-      {/* Modal */}
-      <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
-        <CandidateModal />
-      </Modal>
     </section>
   );
 }

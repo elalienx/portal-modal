@@ -1,16 +1,19 @@
 // NPM Packages
+import { useState, useEffect } from "react";
 import ReactDom from "react-dom";
 
-export default function Modal({ isOpen, children, onClose }) {
+export default function Modal({ state }) {
+  const [child, setChild] = state;
+
   // safeguard
-  if (!isOpen) return null;
+  if (child === null) return null;
 
   return ReactDom.createPortal(
     <>
       <div className="modal-background" />
       <div className="modal-window">
-        <button onClick={onClose}>Close Modal</button>
-        {children}
+        <button onClick={() => setChild(null)}>Close Modal</button>
+        {child}
       </div>
     </>,
     document.getElementById("portal")
