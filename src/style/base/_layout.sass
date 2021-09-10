@@ -1,9 +1,21 @@
 body
     margin: 0
 
-.App 
-    // no rules yet
+img
+    max-width: 100%
+    height: auto
 
-.section
-    margin: 0 auto;
+.section-layout
+    background-color: pink
+    margin: 48px 16px
+
+// Desktop
+@media (min-width: 1024px)
+  .section-layout
+    background-color: lightblue
     max-width: 960px
+    margin: 48px auto
+
+    .grid
+        display: grid
+        grid-template-columns: 4fr 8fr

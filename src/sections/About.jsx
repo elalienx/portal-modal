@@ -5,7 +5,7 @@ export default function About() {
   const imageFile = imageImport.default;
 
   return (
-    <div id="about">
+    <div id="about" className="section-layout">
       <h2>{about.title}</h2>
       <div className="grid">
         <p>{about.description}</p>
