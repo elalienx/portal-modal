@@ -1,4 +1,5 @@
 // Project files
+import About from "./sections/About";
 import Hero from "./sections/Hero";
 import Candidates from "./sections/Candidates";
 import Footer from "./sections/Footer";
@@ -11,6 +12,7 @@ export default function App() {
   return (
     <div className="App">
       <Hero slidesURL={SLIDES_URL} />
+      <About />
       <Candidates />
       <Footer />
     </div>
