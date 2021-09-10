@@ -1,23 +1,27 @@
 [
   {
+    "id": 1,
     "thumbnailURL": "https://picsum.photos/id/100/50",
     "name": "Armin",
     "curriculumURL": "https://github.com/DizdarArmin/portofolio",
     "portoflioURL": "https://armin-dizdar-portofolio.web.app/"
   },
   {
+    "id": 2,
     "thumbnailURL": "https://picsum.photos/id/200/50",
     "name": "Clement",
     "curriculumURL": "https://github.com/clecardona/npa_portfolio",
     "portoflioURL": "https://npa-portfolio.web.app/"
   },
   {
+    "id": 3,
     "thumbnailURL": "https://picsum.photos/id/300/50",
     "name": "Dakouri",
     "curriculumURL": "https://github.com/DakouriKobri/portfolio-web-dk",
     "portoflioURL": "http://www.bing.com"
   },
   {
+    "id": 4,
     "thumbnailURL": "https://picsum.photos/id/400/50",
     "name": "Emmanuel",
     "curriculumURL": "https://github.com/emmaero/PortfolioWebsite.git",
