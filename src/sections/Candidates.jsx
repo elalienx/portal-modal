@@ -1,12 +1,17 @@
 // Project files
+import ModalCandidate from "../components/ModalCandidate";
 import CandidateRow from "../components/CandidateRow";
 import candidates from "../data/candidates.json";
 
-export default function Candidates() {
+export default function Candidates({ setModal }) {
   // Component
   const CandidateRows = candidates.map((item, index) => (
-    <CandidateRow key={index} item={item} />
+    <CandidateRow key={index} item={item} onClick={() => setCandidate(item)} />
   ));
+
+  function setCandidate(item) {
+    setModal(<ModalCandidate item={item} />);
+  }
 
   return (
     <section className="candidates section">

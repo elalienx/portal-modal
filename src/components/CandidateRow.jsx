@@ -1,4 +1,4 @@
-export default function CandidateRow({ item }) {
+export default function CandidateRow({ item, onClick }) {
   const { curriculumURL, name, portoflioURL, thumbnailURL } = item;
 
   return (
@@ -6,7 +6,9 @@ export default function CandidateRow({ item }) {
       <td>
         <img src={thumbnailURL} alt="Thumbnail" />
       </td>
-      <td>{name}</td>
+      <td>
+        <button onClick={onClick}>{name}</button>
+      </td>
       <td>
         <a href={curriculumURL}>Curriculumn</a>
       </td>

@@ -7,7 +7,7 @@ export default function ModalContainer({ modal, setModal }) {
   return ReactDOM.createPortal(
     <>
       <div className="modal-background"></div>
-      <div className="modal-container">
+      <div className="modal-window">
         <button onClick={() => setModal(null)}>X</button>
         {modal}
       </div>

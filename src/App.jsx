@@ -19,7 +19,7 @@ export default function App() {
     <div className="App">
       {/* Page sections */}
       <Hero slidesURL={SLIDES_URL} setModal={setModal} />
-      <Candidates />
+      <Candidates setModal={setModal} />
       <Footer />
 
       {/* Modal popup */}
