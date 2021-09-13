@@ -1,6 +1,8 @@
 import ReactDOM from "react-dom";
 
-export default function ModalContainer({ modal, setModal }) {
+export default function Modal({ state }) {
+  const { modal, setModal } = state;
+
   // safeguard
   if (modal === null) return null;
 

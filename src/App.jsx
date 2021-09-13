@@ -2,7 +2,7 @@
 import { useState } from "react";
 
 // Project files
-import ModalContainer from "./components/ModalContainer";
+import Modal from "./components/Modal";
 import Hero from "./sections/Hero";
 import Candidates from "./sections/Candidates";
 import Footer from "./sections/Footer";
@@ -23,7 +23,7 @@ export default function App() {
       <Footer />
 
       {/* Modal popup */}
-      <ModalContainer modal={modal} setModal={setModal} />
+      <Modal state={[modal, setModal]} />
     </div>
   );
 }
