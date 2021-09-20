@@ -1,12 +1,18 @@
 // Project files
+import CandidateModal from "../components/CandidateModal";
 import CandidateRow from "../components/CandidateRow";
 import candidates from "../data/candidates.json";
 
-export default function Candidates() {
+export default function Candidates({ setModal }) {
   // Component
   const CandidateRows = candidates.map((item, index) => (
-    <CandidateRow key={index} item={item} />
+    <CandidateRow key={index} item={item} onClick={() => onCandidate(item)} />
   ));
+
+  // Methods
+  function onCandidate(item) {
+    setModal(<CandidateModal item={item} />);
+  }
 
   return (
     <section className="candidates section">
@@ -15,6 +21,7 @@ export default function Candidates() {
         This is our list of candidates for this iteration. Each week the become
         more proficient as they develop more and more projects.
       </p>
+
       <table>
         <thead>
           <tr>
